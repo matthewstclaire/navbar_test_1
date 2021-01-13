@@ -10,7 +10,7 @@ html {
   body {
     font-family: sans-serif;
     margin: 0;
-    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    background-image: linear-gradient(260deg, #7abce9 0%, #1d66ec 100%);
   }
   
   .wrapper {
@@ -45,8 +45,10 @@ html {
 
   .slider-nav li {
       flex:2;
+      /* border in place to show flex containers */
       border:1px solid red;
       text-align: center;
+        display:flex; /*This is the nest. Acting as if this LI is the container. */
   }
 
   .slider-nav .arrow {
@@ -54,6 +56,12 @@ html {
   }
 
   .slider-nav a {
-      display:block;
-      width: 100%;
+      flex-basis:100%;
+      display: flex;
+      align-items: center;
+  }
+
+  .slider-nav span{
+    display:block;
+    width: 100%;
   }

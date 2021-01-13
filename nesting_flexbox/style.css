@@ -46,7 +46,7 @@ html {
   .slider-nav li {
       flex:2;
       /* border in place to show flex containers */
-      border:1px solid red;
+      /* border:1px solid red; */
       text-align: center;
         display:flex; /*This is the nest. Acting as if this LI is the container. */
   }

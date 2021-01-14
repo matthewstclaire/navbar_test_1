@@ -62,7 +62,17 @@ html {
   }
 
   .cover {
-      display: flex;
-      
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+  }
 
+  .flex-form {
+      display:flex;
+      border:10px solid rgba(0,0,0,0.2);
+      border-radius:5px;
+  }
+
+  input[type="search"] {
+      flex-basis: 500px;
   }
